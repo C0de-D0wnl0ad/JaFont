@@ -73,3 +73,9 @@ Adnan "skew" Zafar - Version 0.0.1b and 0.0.1c - Widescreen font creation
 --
 Adnan "skew" Zafar
 adnan.f.zafar "at" gmail "dot" com
+
+-------------------------------
+**NOTE**
+I did not create or devolop this program, I am only redistributing it as the developer allowed in his release's readme.txt
+
+-------------------------------
