@@ -17,14 +17,25 @@ OMPUTER BLOWS UP. :)
 
 ----------------
 
- The jafont.exe utility is in the .\bin\ directory that was created when unzipping this archive. It will work on 32-bit or 64-bit Windows. If you have errors trying to run it, download and install the Visual C++ redistributable for Visual Studio 2015 from here https://www.microsoft.com/en-us/download/details.aspx?id=48145 . If your errors persist, contact Adnan by email.
+ The jafont.exe utility is in the .\bin\ directory that was created when unzipping this archive. It will work on 32-bit or 64-bit Windows. If you have errors trying to run it, download and install the Visual C++ redistributable for Visual Studio 2015 from here:
+ 
+https://www.microsoft.com/en-us/download/details.aspx?id=48145 . 
 
- usage: JAfont -create_sized <fontfile> <font_height> <font_width> <JAfontname>
- example: jafont -create_sized anewhope.ttf 180 135 anewhope
+If your errors persist, contact Adnan by email.
 
- Resulting .fontdat and .png images will be placed in the executeable's directory.  In the example above, anewhope.fontdat and anewhope.png would be created.
+**USAGE**
+JAfont -create_sized <fontfile> <font_height> <font_width> <JAfontname>
+ 
+**EXAMPLE** 
+jafont -create_sized anewhope.ttf 180 135 anewhope
 
- When packaging the fonts it is important that you do NOT alter the original PK3 files, and place your new fonts in a new PK3 file, this is pretty much standard procedure for "replacing" game assets.
+**RESULT**
+The Resulting .fontdat and .png images will be placed in the executeable's directory.  
+
+In the example above, anewhope.fontdat and anewhope.png would be created.
+
+**CAUTION**
+When packaging the fonts it is important that you do NOT alter the original PK3 files, and place your new fonts in a new PK3 file, this is pretty much standard procedure for *replacing* game assets.
 
 -----------------------------------
 **WIDESCREEN UPDATE (Version 0.0.1c):**
@@ -38,11 +49,13 @@ This version adds the ability to make widescreen compatible fonts. Since Jedi Ac
 
 For example, if the screen resolution is 1920 x 1080, then using a font with the same width and height per character with the 640x480 virtual screen in Jedi Academy would result in a character that appeared to be (1920/1080)/(640/480) = 4/3 times wider than it should be.  To produce a font that has the correct width on the 1920 x 1080 screen, the width should be equal to (640/480)/(1920/1080) * font_height.
 
+**CALCULATING FONT HEIGHT AND WIDTH FOR ASPECT RATIO**
+
 Generally, for any given resolution width and height, the font width should be calculated using the following equation and entered into the commandline as the parameter font_width:
 
   font_width = (640/480)/(screen width / screen height) * font_height
 
-Have fun!
+**Have fun!**
 
 ---------------------------
 **COMPILING (Version 0.0.1c):**
@@ -75,7 +88,7 @@ Adnan "skew" Zafar
 adnan.f.zafar "at" gmail "dot" com
 
 -------------------------------
-**NOTE**
+**NOTE FROM REPOSITORY OWNER**
 
 I did not create, nor devolop this program. I am only redistributing JkFont as the developer allowed in his release's readme.txt.
 
