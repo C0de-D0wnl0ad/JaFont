@@ -49,7 +49,7 @@ This version adds the ability to make widescreen compatible fonts. Since Jedi Ac
 
 For example, if the screen resolution is 1920 x 1080, then using a font with the same width and height per character with the 640x480 virtual screen in Jedi Academy would result in a character that appeared to be (1920/1080)/(640/480) = 4/3 times wider than it should be.  To produce a font that has the correct width on the 1920 x 1080 screen, the width should be equal to (640/480)/(1920/1080) * font_height.
 
-**CALCULATING FONT HEIGHT AND WIDTH FOR ASPECT RATIO**
+**CALCULATING FONT HEIGHT AND WIDTH**
 
 Generally, for any given resolution width and height, the font width should be calculated using the following equation and entered into the commandline as the parameter font_width:
 
